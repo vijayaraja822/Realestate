@@ -15,7 +15,7 @@ df = pd.read_csv(input_file)
 
 df = df.drop_duplicates()
 df = df.dropna(how="all")
-
+#sg conflict test
 # ✅ Convert numeric fields
 if "bhk" in df.columns:
     df["bhk"] = pd.to_numeric(df["bhk"], errors="coerce").fillna(0).astype(int)
